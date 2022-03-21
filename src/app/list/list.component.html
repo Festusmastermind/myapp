@@ -1,0 +1,9 @@
+<h1>List of Users</h1>
+
+<ul *ngIf="users" class="section">
+    <li *ngFor="let user of users.data">
+        <img [src]="user.avatar">
+        <p>{{ user.first_name }} {{ user.last_name }}</p>
+        <p>{{ user.email}}</p>
+    </li>
+</ul>
